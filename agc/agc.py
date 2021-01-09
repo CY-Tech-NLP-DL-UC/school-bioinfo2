@@ -276,7 +276,7 @@ def write_OTU(otu_list, output_file):
     with open(output_file, 'w') as file:
         i = 1
         for otu in otu_list:
-            text = ">OTU_{} occurence:{}\n{}\n".format(i, otu[1], fill(otu[0]))
+            text = ">OTU_{} occurrence:{}\n{}\n".format(i, otu[1], fill(otu[0]))
             if i == len(otu_list):
                 text = text[:-1]
             file.write(text)
